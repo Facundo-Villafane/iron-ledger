@@ -425,6 +425,7 @@ Sprites individuales por estado (no sprite sheets animados en el MVP). Godot man
 - *Qué evitar*: El nihilismo como tono dominante — Iron Ledger es tenso, no deprimente. El registro de Blade Runner 2049 (demasiado limpio y vacío para nuestro gremio).
 
 **Hangares industriales reales (NASA, astilleros, fábricas)**
+
 ![Hangares industriales reales (NASA, astilleros, fábricas)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIuZWXBdw_XUgI_hnAwoAcdCmrDDppKVKFOw&s)
 - *Qué tomar*: La honestidad funcional del espacio. Los cables, grúas, marcas de pintura en el piso. La escala humana de la maquinaria. La belleza accidental de la infraestructura real.
 - *Qué evitar*: La frialdad estéril de un hangar vacío. Iron Ledger tiene vida — pilotos, mechas, equipo, historia acumulada en las paredes.
