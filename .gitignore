@@ -1,0 +1,22 @@
+# Session state (ephemeral, not for collaborators)
+production/session-state/
+production/session-logs/
+
+# Godot cache
+.godot/
+*.translation
+
+# Export builds
+builds/
+*.exe
+*.pck
+*.zip
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor temp files
+*.tmp
+*.log
