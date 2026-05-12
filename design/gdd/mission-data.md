@@ -1,6 +1,6 @@
 # Mission Data System
 
-> **Status**: In Design
+> **Status**: Approved
 > **Author**: Design session + agents
 > **Last Updated**: 2026-05-11
 > **Implements Pillar**: P1 — Decisiones bajo incertidumbre
@@ -200,28 +200,64 @@ Los risk tags son el único indicio visible de los parámetros ocultos. La corre
 
 ## Edge Cases
 
-[To be designed]
+1. **`actual_reward` fuera de rango**: si `base_reward_min > base_reward_max` por error de datos, `randi_range` devuelve resultado indefinido → validar en carga de templates que `min ≤ max`. Si falla, loguear error y usar `min` como valor fijo.
+
+2. **Misión expirada mientras está ASSIGNED**: `week_expires` llega pero la misión ya fue asignada. Una misión ASSIGNED **nunca expira** — `week_expires` solo aplica a AVAILABLE. El Weekly Cycle System ignora el campo si `status != AVAILABLE`.
+
+3. **Sin misiones disponibles**: todas las misiones de la semana se asignaron o expiraron antes de que el jugador haga algo. La cola queda vacía. El sistema no genera emergencias — simplemente no hay misiones ese período. Es una situación válida (presión financiera sin opción de ingresos).
+
+4. **`preferred_mecha_type = NONE`**: el template no prefiere ningún tipo. La Mission Card UI muestra "sin preferencia" o no muestra el campo. Risk Calculation no aplica el bonus de tipo.
+
+5. **Doble asignación en UI**: el jugador intenta asignar el mismo piloto o mecha a dos misiones distintas. El Assignment System valida esto — Mission Data System solo expone `assigned_pilot_id`. Si ya tiene valor, el Assignment System rechaza la segunda asignación.
+
+6. **`reward_hint` con rango de un solo valor** (`min == max`): se muestra como valor fijo ("1200 cr") en lugar de rango ("1200–1200 cr"). La Mission Card UI maneja este display.
+
+7. **Template con `unlock_tier` mayor al tier actual**: Mission Generation System filtra estos templates antes de instanciarlos. Mission Data System no valida esto — es responsabilidad del generador.
 
 ## Dependencies
 
-[To be designed]
+Mission Data System es Foundation — no depende de ningún otro sistema.
+
+**Sistemas que dependen de este:**
+
+| Sistema | Qué consume | Dirección |
+|---|---|---|
+| **Mission Generation System** | Lee `MissionTemplate` (catálogo completo) para crear `MissionInstance` | Template → Instance |
+| **Risk Calculation System** | Lee `actual_difficulty`, `actual_damage_chance`, `actual_collateral_chance` de `MissionInstance` | Solo campos hidden |
+| **Assignment System** | Lee `status` y campos visibles; escribe `assigned_pilot_id`, `assigned_mecha_id`; transiciona `status` | Lectura + escritura |
+| **Mission Resolution System** | Lee `MissionInstance` completa (todos los campos) para resolver outcome | Acceso total |
+| **Weekly Cycle System** | Transiciona `status` (ASSIGNED→IN_PROGRESS, AVAILABLE→EXPIRED) | Solo escritura de estado |
+| **Mission Card UI** | Lee únicamente campos `[VISIBLE]` de `MissionInstance` | Solo visible |
+
+**Restricción de acceso:**
+Ningún sistema de UI puede acceder directamente a campos `[HIDDEN]`. Si la UI necesita mostrar algo derivado de un campo oculto (ej: un indicador de riesgo general), ese valor lo calcula Risk Calculation System y lo expone como su propio output.
 
 ## Tuning Knobs
 
-[To be designed]
+| Knob | Dónde vive | Valor inicial sugerido | Rango seguro | Qué afecta |
+|---|---|---|---|---|
+| `DIFFICULTY_VARIANCE` | Game Configuration | `0.10` | `0.0 – 0.20` | Cuánto varía `actual_difficulty` respecto al `base_difficulty` del template. Más alto = más sorpresas, más impredecible. |
+| `CHANCE_VARIANCE` | Game Configuration | `0.05` | `0.0 – 0.15` | Varianza en `actual_damage_chance` y `actual_collateral_chance`. Mantener bajo para que los risk tags sean señales confiables. |
+| `base_difficulty` por template | Archivo de templates | Ver catálogo | `0.05 – 0.90` | Dificultad base de cada tipo de misión. El knob de balance más directo del juego. |
+| `base_reward_min / max` por template | Archivo de templates | Ver catálogo | — | Define el rango de pago. Subir ambos si el jugador siempre está en quiebra; bajar si el juego es demasiado fácil económicamente. |
+| `zone_damage_modifier` por zona | Tabla de zona | Ver tabla de modificadores | `0.7 – 1.5` | Ajusta cuánto daña cada zona a los mechas. |
+| `zone_collateral_modifier` por zona | Tabla de zona | Ver tabla de modificadores | `0.7 – 1.8` | Ajusta el riesgo colateral por zona. Tocar con cuidado — afecta reputación y penalizaciones. |
 
-## Visual/Audio Requirements
-
-[To be designed]
-
-## UI Requirements
-
-[To be designed]
+**Notas de tuning:**
+- `DIFFICULTY_VARIANCE` y `CHANCE_VARIANCE` son los primeros knobs a tocar si el juego se siente "demasiado predecible" o "demasiado caótico".
+- Los `base_difficulty` de los templates son el balance más impactante — una misión de transporte en 0.15 vs 0.25 cambia completamente la curva de dificultad temprana.
+- Los modificadores de zona se balancean en conjunto: si URBAN\_DENSE es demasiado punitivo, bajar `zone_collateral_modifier` antes de tocar las misiones individuales.
 
 ## Acceptance Criteria
 
-[To be designed]
+| # | Criterio | Cómo verificar | Tipo |
+|---|---|---|---|
+| AC-1 | Un `MissionTemplate` cargado desde archivo tiene todos los campos requeridos con valores dentro de rango | Test unitario: cargar catálogo, assert campos presentes y `min ≤ max` | Lógica |
+| AC-2 | `actual_difficulty` generado siempre cae entre 0.05 y 0.95 | Test unitario: generar 1000 instancias, assert ningún valor fuera de rango | Lógica |
+| AC-3 | `actual_damage_chance` y `actual_collateral_chance` siempre dentro de sus rangos (`[0.02, 0.90]` y `[0.01, 0.80]`) | Test unitario: generar 1000 instancias, assert rangos | Lógica |
+| AC-4 | `MissionInstance` en estado ASSIGNED no transiciona a EXPIRED aunque `week_expires` pase | Test unitario: simular avance de semanas con instancia ASSIGNED | Lógica |
+| AC-5 | La Mission Card UI no puede acceder a ningún campo `[HIDDEN]` de `MissionInstance` | Code review: la UI solo llama a métodos/propiedades marcadas como visibles | Integración |
+| AC-6 | Una misión con `preferred_mecha_type = NONE` se genera y muestra sin errores | Test manual: crear template con NONE, verificar que la card no muestra campo de preferencia | Visual |
+| AC-7 | El catálogo inicial contiene al menos 1 template de cada tipo (TRANSPORT, COMBAT, SALVAGE) | Test unitario: assert catálogo tiene ≥ 1 template por MissionType | Lógica |
+| AC-8 | `reward_hint` con `min == max` se muestra como valor único, no como rango | Test manual: crear template con valores iguales, verificar display en Mission Card | Visual |
 
-## Open Questions
-
-[To be designed]
