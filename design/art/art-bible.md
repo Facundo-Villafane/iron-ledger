@@ -325,16 +325,19 @@ Sprites individuales por estado (no sprite sheets animados en el MVP). Godot man
 ### Pilotos
 
 **13 Sentinels: Aegis Rim (Vanillaware)**
+
 ![13 Sentinels: Aegis Rim (Vanillaware)](https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/06/13-Sentinels-Meta-Chips-Feature-Image.jpg)
 - *Qué tomar*: Claridad de identidad por personaje — cada piloto tiene UN elemento visual dominante reconocible en silueta. Equilibrio entre traje funcional y diseño estilizado atractivo. El nivel de detalle que funciona en pixel: sugerido, no ilustrado.
 - *Qué evitar*: La escala de producción y el airbrushing. Nuestra versión usa clusters de pixel art, no gradientes.
 
 **Ghost in the Shell (Masamune Shirow / Oshii)**
+
 ![Ghost in the Shell (Masamune Shirow / Oshii)](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9nB_hpGYVJVNYHECivynlZL1fcrwRvBPOxw&s)
 - *Qué tomar*: El traje funcional que se ve ingenierizado. Los acentos de tech que parecen útiles. La paleta restringida — mucho color base, pocos acentos.
 - *Qué evitar*: El nivel de fanservice del manga original. Nuestra interpretación es "atractivo estilizado moderado."
 
 **Anime sci-fi gacha (nivel Arknights / Punishing Gray Raven)**
+
 ![Punishing Gray Raven](https://preview.redd.it/punishing-gray-raven-was-the-gacha-game-i-needed-v0-dpruyf088fag1.jpeg?auto=webp&s=4dde6c56810457a9caf041b7a1b98deff105621d)
 - *Qué tomar*: Diferenciación de rol a primera vista. Acentos de color como marcador de facción/rol. El atractivo sin ser explícito.
 - *Qué evitar*: El overdesign gacha — 47 correas, 12 capas, 8 accesorios. Pillar 2 (pixel art limpio) cancela el overdesign.
@@ -344,16 +347,19 @@ Sprites individuales por estado (no sprite sheets animados en el MVP). Godot man
 ### Mechas
 
 **Patlabor (Masami Yuuki)**
+
 ![Patlabor (Masami Yuuki)](https://i.pinimg.com/736x/a1/1a/72/a11a727e8b339eca88a2c887804a0398.jpg)
 - *Qué tomar*: Los Labors son **herramientas de trabajo**, no armas de dios. Parecen maquinaria pesada con torso de robot. El gremio de Iron Ledger tiene exactamente este tipo de mechas — gastados, prácticos, con personalidad de máquina vieja que todavía funciona. **Referencia más importante para la escala de poder del mundo.**
 - *Qué evitar*: La lentitud y torpeza visual intencional de Patlabor — nuestros mechas necesitan siluetas cool aunque sean trabajadores.
 
 **Armored Core (FromSoftware)**
+
 ![Armored Core (FromSoftware)]([https://i.pinimg.com/736x/a1/1a/72/a11a727e8b339eca88a2c887804a0398.jpg](https://preview.redd.it/armored-core-3-ac-concept-design-by-shoji-kawamori-bipeds-v0-wnftdg296vcf1.jpeg?auto=webp&s=12b2b1085d28c86e6f5d8785a4f7e7cf12354db5))
 - *Qué tomar*: La filosofía modular — se nota que son ensamblajes de piezas. Los detalles de ingeniería: ductos, paneles de acceso, articulaciones expuestas. La variedad dentro del mismo vocabulario visual.
 - *Qué evitar*: El nivel de detalle de AC6 en pixel art — imposible en 64×96px. Tomar el *lenguaje* de las formas, no la complejidad.
 
 **Zone of the Enders (Yoji Shinkawa)**
+
 ![Zone of the Enders (Yoji Shinkawa)](https://i.pinimg.com/736x/b5/de/17/b5de17c8e7fc3f5aed3924546140203e.jpg)
 - *Qué tomar*: La silueta como primer lenguaje — Jehuty reconocible en 16px. Los acentos de energía como parte del diseño base. La sensación de vida dentro de la máquina.
 - *Qué evitar*: El registro de "super robot" de alto poder. Iron Ledger tiene mechas de chatarreros, no los Frames de ZoE.
@@ -363,17 +369,20 @@ Sprites individuales por estado (no sprite sheets animados en el MVP). Godot man
 ### UI
 
 **Citizen Sleeper (Jump Over the Age)**
+
 ![Citizen Sleeper (Jump Over the Age)](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1578650/ss_9db68bf85c1d9e44331f5a8dd4134aae8a744076.1920x1080.jpg?t=1755218068)
 - *Qué tomar*: "La burocracia corporativa como estética de gameplay." El ledger, las cartas, los formularios — la paperwork IS el juego. La UI que te recuerda que sos un recurso del sistema. **Referencia más directa para Iron Ledger.**
 - *Qué evitar*: La tipografía vectorial y la paleta desaturada — Iron Ledger usa pixel font y colores semánticos expresivos.
 
 **TRON Legacy (Kosinski)**
-![TRON Legacy (Kosinski)]([ ](https://i0.wp.com/ilikeinterfaces.com/wp-content/uploads/2015/03/00_11_1700060.png?fit=1440%2C810&ssl=1))
+
+![TRON Legacy (Kosinski)](https://i0.wp.com/ilikeinterfaces.com/wp-content/uploads/2015/03/00_11_1700060.png?fit=1440%2C810&ssl=1)
 - *Qué tomar*: Fondos muy oscuros con acentos de líneas luminosas saturadas. El contraste entre información y vacío. La UI como el único elemento iluminado en la oscuridad.
 - *Qué evitar*: Las líneas de neón literales y el monocolorismo. Iron Ledger usa múltiples colores semánticos.
 
 **Minority Report (Spielberg / McDowell)**
-![Minority Report (Spielberg / McDowell)]([ ](https://freight.cargo.site/t/original/i/ed688c3f4f39c8cd294c03cf4c203c3f8be7f6506dd984ac680fc9ca75fc38ea/MinorityReportType_06.jpg))
+
+![Minority Report (Spielberg / McDowell)](https://freight.cargo.site/t/original/i/ed688c3f4f39c8cd294c03cf4c203c3f8be7f6506dd984ac680fc9ca75fc38ea/MinorityReportType_06.jpg)
 - *Qué tomar*: El concepto de capas de información con jerarquía clara. Datos primarios en primer plano, contexto en segundo. Legibilidad a pesar de la densidad.
 - *Qué evitar*: Los efectos 3D, holográficos y gestuales. Somos 2D pixel — tomar el concepto, no la ejecución.
 
@@ -382,16 +391,19 @@ Sprites individuales por estado (no sprite sheets animados en el MVP). Godot man
 ### Pixel Art
 
 **Into the Breach (Subset Games)**
+
 ![Into the Breach (Subset Games)](https://miro.medium.com/1*p9S7AdEuCPhfUbE7cKuKzQ.gif)
 - *Qué tomar*: El estándar de legibilidad — cada sprite comunica su rol y estado en el menor número de píxeles posible. Sin elemento visual que compita con la información de gameplay. **Barra de calidad mínima de legibilidad para Iron Ledger.**
 - *Qué evitar*: El estilo frío-minimalista. Iron Ledger tiene más personalidad y calor. Into the Breach es el piso de legibilidad, no el techo de diseño.
 
 **Hyper Light Drifter (Heart Machine)**
-![Hyper Light Drifter (Heart Machine)]([ ](https://i.blogs.es/ea7b49/140416-hld-review/1366_2000.jpg))
+
+![Hyper Light Drifter (Heart Machine)](https://i.blogs.es/ea7b49/140416-hld-review/1366_2000.jpg)
 - *Qué tomar*: El uso masterful de paleta limitada para crear atmósfera. Profundidad con oscuridad y luz sin usar 3D. Los momentos de color saturado que "pop" sobre fondo oscuro.
 - *Qué evitar*: La abstracción del mundo — Iron Ledger necesita elementos reconocibles. HLD es referencia de *atmósfera*, no de *legibilidad*.
 
 **Metal Slug (SNK)**
+
 ![Metal Slug (SNK)](https://pbs.twimg.com/media/GQcerg5W0AABatg.png)
 - *Qué tomar*: La expresividad y personalidad de los personajes a escala pequeña. El nivel de detalle que hace que los sprites "vivan". El satisfying visual feedback de cada acción.
 - *Qué evitar*: El nivel de animación (30-60 frames por acción). Iron Ledger MVP usa sprites estáticos o de 2-4 frames.
@@ -401,11 +413,13 @@ Sprites individuales por estado (no sprite sheets animados en el MVP). Godot man
 ### Mundo / Setting
 
 **Syd Mead (diseñador visual — Blade Runner, TRON, Aliens)**
+
 ![Syd Mead (diseñador visual — Blade Runner, TRON, Aliens)](https://www.cinechronicle.com/wp-content/uploads/2019/12/Syd-Mead-works-1.jpg)
 - *Qué tomar*: "Diseño funcional como belleza." Las máquinas se ven como si realmente funcionaran — ductos donde tienen que ir los ductos, paneles donde tiene sentido. Guía principal para el hangar y los mechas.
 - *Qué evitar*: El futurismo cromado y limpio de sus trabajos utópicos. Iron Ledger es un gremio de chatarreros — todo está usado, parcheado, y funcional-hasta-que-no.
 
 **Blade Runner (Ridley Scott / Jordan Cronenweth)**
+
 ![Blade Runner (Ridley Scott / Jordan Cronenweth)](https://external-preview.redd.it/blade-runner-1982-dir-ridley-scott-dop-jordan-cronenweth-v0-bzBxM3ZjMm52NHZjMSY-AkqAqnKQZoJzXs2I7sGT91nCMpYy5a7vwZdJLnY1.png?width=640&crop=smart&format=pjpg&auto=webp&s=1311e0d685618c5daefb6d8fb497c41e216be0fb)
 - *Qué tomar*: La ciudad industrial que nunca descansa. Contraste entre tecnología avanzada y decadencia material. El sentimiento de que el mundo tiene historia antes del primer frame.
 - *Qué evitar*: El nihilismo como tono dominante — Iron Ledger es tenso, no deprimente. El registro de Blade Runner 2049 (demasiado limpio y vacío para nuestro gremio).
