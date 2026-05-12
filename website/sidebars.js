@@ -22,6 +22,8 @@ const sidebars = {
       items: [
         'gdd/systems-index',
         'gdd/mission-data',
+        'gdd/game-configuration',
+        'gdd/pilot-entity',
       ],
     },
     // Agregar nuevos GDDs acá a medida que se vayan creando
