@@ -20,3 +20,8 @@ desktop.ini
 # Editor temp files
 *.tmp
 *.log
+
+# Docusaurus
+website/node_modules/
+website/build/
+website/.docusaurus/
