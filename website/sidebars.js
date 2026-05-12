@@ -25,6 +25,7 @@ const sidebars = {
         'gdd/game-configuration',
         'gdd/pilot-entity',
         'gdd/mecha-entity',
+        'gdd/risk-calculation',
       ],
     },
     // Agregar nuevos GDDs acá a medida que se vayan creando

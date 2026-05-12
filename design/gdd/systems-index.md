@@ -23,7 +23,7 @@ La mayoría de los sistemas son relativamente pequeños — el juego es intencio
 | 2 | Game Configuration System | Core | MVP | Approved | design/gdd/game-configuration.md | — |
 | 3 | Pilot Entity System | Core | MVP | Approved | design/gdd/pilot-entity.md | Game Configuration |
 | 4 | Mecha Entity System | Core | MVP | Approved | design/gdd/mecha-entity.md | Game Configuration |
-| 5 | Risk Calculation System | Gameplay | MVP | Not Started | — | Pilot Entity, Mecha Entity, Mission Data |
+| 5 | Risk Calculation System | Gameplay | MVP | Approved | design/gdd/risk-calculation.md | Pilot Entity, Mecha Entity, Mission Data |
 | 6 | Financial Ledger System | Economy | MVP | Not Started | — | Game Configuration |
 | 7 | Mission Generation System | Gameplay | MVP | Not Started | — | Mission Data, Game Configuration |
 | 8 | Game State Manager | Core | MVP | Not Started | — | Game Configuration |
@@ -163,8 +163,8 @@ Ninguna detectada.
 | Total sistemas identificados | 22 |
 | Docs de diseño iniciados | 0 |
 | Docs de diseño en revisión | 0 |
-| Docs de diseño aprobados | 4 |
-| Sistemas MVP diseñados | 4 / 18 |
+| Docs de diseño aprobados | 5 |
+| Sistemas MVP diseñados | 5 / 18 |
 | Sistemas VS diseñados | 0 / 4 |
 
 ---
