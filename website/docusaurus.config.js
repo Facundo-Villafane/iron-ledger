@@ -36,6 +36,8 @@ const config = {
           exclude: ['CLAUDE.md', 'registry/**', '**/*.yaml'],
           sidebarPath: './sidebars.js',
           editUrl: 'https://github.com/Facundo-Villafane/iron-ledger/edit/master/design/',
+          showLastUpdateTime: true,
+          showLastUpdateAuthor: true,
         },
         blog: false,
         theme: {
