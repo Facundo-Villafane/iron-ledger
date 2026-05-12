@@ -24,6 +24,7 @@ const sidebars = {
         'gdd/mission-data',
       ],
     },
+    // Agregar nuevos GDDs acá a medida que se vayan creando
   ],
 };
 

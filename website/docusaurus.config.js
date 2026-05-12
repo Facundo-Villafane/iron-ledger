@@ -34,7 +34,6 @@ const config = {
         docs: {
           path: '../design',
           exclude: ['CLAUDE.md', 'registry/**', '**/*.yaml'],
-          routeBasePath: '/',
           sidebarPath: './sidebars.js',
           editUrl: 'https://github.com/Facundo-Villafane/iron-ledger/edit/master/design/',
         },
@@ -60,7 +59,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'designSidebar',
             position: 'left',
-            label: 'Documentación',
+            label: 'Docs',
           },
           {
             href: 'https://github.com/Facundo-Villafane/iron-ledger',
