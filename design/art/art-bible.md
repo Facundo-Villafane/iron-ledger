@@ -325,6 +325,7 @@ Sprites individuales por estado (no sprite sheets animados en el MVP). Godot man
 ### Pilotos
 
 **13 Sentinels: Aegis Rim (Vanillaware)**
+![Markdown Logo](https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/06/13-Sentinels-Meta-Chips-Feature-Image.jpg)
 - *Qué tomar*: Claridad de identidad por personaje — cada piloto tiene UN elemento visual dominante reconocible en silueta. Equilibrio entre traje funcional y diseño estilizado atractivo. El nivel de detalle que funciona en pixel: sugerido, no ilustrado.
 - *Qué evitar*: La escala de producción y el airbrushing. Nuestra versión usa clusters de pixel art, no gradientes.
 
