@@ -56,6 +56,12 @@ La tensión visual es parte del diseño: ver una bahía vacía (mecha BROKEN sin
 
 └───────────────────┴───────────────────[AVANZAR TURNO]────────┘
 ```
+**Mockups Generados por IA**
+*Opcion A*
+![Mockup Generado por IA](https://chatgpt.com/backend-api/estuary/public_content/enc/eyJpZCI6Im1fNmEwM2Y3M2Q5OGVjODE5MTljY2E0MjIxYzQyZGM5YTg6ZmlsZV8wMDAwMDAwMDA1ZjQ3MjBlYjNkYjYxZWUzOTY1OTI3NyIsInRzIjoiMjA1ODYiLCJwIjoicHlpIiwiY2lkIjoiMSIsInNpZyI6ImQxZmIzZjZlNTc1OGIwNWQzYTJlYjE3MDRlYmNiZWQ4OTc3MWNmYTQzOGY1MTg5ODI1OTIzYjAzN2UyZjU0MTQiLCJ2IjoiMCIsImdpem1vX2lkIjpudWxsLCJjcyI6bnVsbCwiY2RuIjpudWxsLCJmbiI6bnVsbCwiY2QiOm51bGwsImNwIjpudWxsLCJtYSI6bnVsbH0=)
+
+*Opcion B*
+![Mockup Generado por IA](https://chatgpt.com/backend-api/estuary/public_content/enc/eyJpZCI6Im1fNmEwM2Y4YTA4NDZjODE5MTk2MDBiMDc1OTRlNDhiMzA6ZmlsZV8wMDAwMDAwMDk2NmM3MWZiYTNjZTZhZjU0NmE1ZGZkYyIsInRzIjoiMjA1ODYiLCJwIjoicHlpIiwiY2lkIjoiMSIsInNpZyI6ImQyYTE3NzAxYjkzZjcwZmE1NjE2NzE3Yzk4Y2YxOTFhYjQ2MGQ2MWU0MGRlMDgwZjk2ZDI5NjJmYzk4Mzc2NTciLCJ2IjoiMCIsImdpem1vX2lkIjpudWxsLCJjcyI6bnVsbCwiY2RuIjpudWxsLCJmbiI6bnVsbCwiY2QiOm51bGwsImNwIjpudWxsLCJtYSI6bnVsbH0=)
 
 *Las grillas de bahías y pilotos renderizan dinámicamente — el layout escala de 3 a N slots sin cambios de código.*
 
