@@ -31,6 +31,7 @@ const sidebars = {
         'gdd/game-state-manager',
         'gdd/assignment-system',
         'gdd/mission-resolution',
+        'gdd/damage-system',
       ],
     },
     // Agregar nuevos GDDs acá a medida que se vayan creando
