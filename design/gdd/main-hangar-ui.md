@@ -34,17 +34,27 @@ La tensión visual es parte del diseño: ver una bahía vacía (mecha BROKEN sin
 ### Layout de la pantalla
 
 ```
-┌─────────────────────────────────────────────────────┐
+┌──────────────────────────────────────────────────────────────┐
+
 │  HEADER: Semana 4/12 │ Balance: 6.200 cr │ Runway: 2 semanas │
-├───────────────────┬─────────────────────────────────┤
-│  PANEL HANGAR     │  PANEL MISIONES                 │
-│  ┌──┐ ┌──┐ ┌──┐  │  [Misión 1] [Misión 2]          │
-│  │B1│ │B2│ │B3│  │  [Misión 3] [Misión 4]          │
-│  └──┘ └──┘ └──┘  │                                 │
-├───────────────────┤                                 │
-│  PANEL ROSTER     │                                 │
-│  [P1] [P2] [P3]  │                                 │
-└───────────────────┴──────────[AVANZAR TURNO]────────┘
+
+├───────────────────┬──────────────────────────────────────────┤
+
+│  PANEL HANGAR     │  PANEL MISIONES                          │
+
+│  ┌──┐ ┌──┐ ┌──┐   │  [Misión 1] [Misión 2]                   │
+
+│  │B1│ │B2│ │B3│   │  [Misión 3] [Misión 4]                   │
+
+│  └──┘ └──┘ └──┘   │                                          │
+
+├───────────────────┤                                          │
+
+│  PANEL ROSTER     │                                          │
+
+│  [P1] [P2] [P3]   │                                          │
+
+└───────────────────┴───────────────────[AVANZAR TURNO]────────┘
 ```
 
 *Las grillas de bahías y pilotos renderizan dinámicamente — el layout escala de 3 a N slots sin cambios de código.*
