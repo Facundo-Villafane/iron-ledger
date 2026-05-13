@@ -41,6 +41,9 @@ La mayoría de los sistemas son relativamente pequeños — el juego es intencio
 | 20 | Weekly Ledger UI | UI | VS | Not Started | — | Financial Ledger, Weekly Cycle |
 | 21 | Notification System | UI | VS | Not Started | — | Mission Resolution, Damage System, Financial Ledger |
 | 22 | Main Menu UI | UI | VS | Not Started | — | Save/Load System, Game State Manager |
+| 23 | Daily Activity System | Gameplay | VS | Not Started | — | Pilot Entity, Financial Ledger, Weekly Cycle |
+| 24 | Fatigue System | Gameplay | VS | Not Started | — | Daily Activity, Pilot Entity, Risk Calculation |
+| 25 | Pilot Activities (streaming, training, rest) | Gameplay | VS | Not Started | — | Daily Activity, Fatigue, Financial Ledger |
 
 *(Sistemas 1-4 son datos puros — no tienen dependencias. Sistemas marcados como "inferred" en texto de análisis: 7, 8, 11-14, 19-22.)*
 
@@ -160,7 +163,7 @@ Ninguna detectada.
 
 | Métrica | Cantidad |
 |---------|---------|
-| Total sistemas identificados | 22 |
+| Total sistemas identificados | 25 |
 | Docs de diseño iniciados | 0 |
 | Docs de diseño en revisión | 0 |
 | Docs de diseño aprobados | 8 |

@@ -56,6 +56,7 @@ extends Resource
 | `skill_level` | int | 1 – 5 | Habilidad general — el modificador más importante en Risk Calculation |
 | `specialization` | PilotSpec | enum | COMBAT / TRANSPORT / SALVAGE / GENERALIST |
 | `trait` | PilotTrait | enum | Un rasgo pasivo — ver tabla de rasgos abajo |
+| `fatigue` | int | 0 – 100 | *Reservado para Daily Activity System (VS)* — en MVP siempre es 0, sin efecto |
 
 ---
 
