@@ -29,6 +29,7 @@ const sidebars = {
         'gdd/financial-ledger',
         'gdd/mission-generation',
         'gdd/game-state-manager',
+        'gdd/assignment-system',
       ],
     },
     // Agregar nuevos GDDs acá a medida que se vayan creando

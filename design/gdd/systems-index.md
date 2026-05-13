@@ -27,7 +27,7 @@ La mayoría de los sistemas son relativamente pequeños — el juego es intencio
 | 6 | Financial Ledger System | Economy | MVP | Approved | design/gdd/financial-ledger.md | Game Configuration |
 | 7 | Mission Generation System | Gameplay | MVP | Approved | design/gdd/mission-generation.md | Mission Data, Game Configuration |
 | 8 | Game State Manager | Core | MVP | Approved | design/gdd/game-state-manager.md | Game Configuration |
-| 9 | Assignment System | Gameplay | MVP | Not Started | — | Pilot Entity, Mecha Entity, Mission Generation |
+| 9 | Assignment System | Gameplay | MVP | Approved | design/gdd/assignment-system.md | Pilot Entity, Mecha Entity, Mission Generation |
 | 10 | Mission Resolution System | Gameplay | MVP | Not Started | — | Assignment, Risk Calculation, Mission Data |
 | 11 | Damage System | Gameplay | MVP | Not Started | — | Mission Resolution, Mecha Entity, Pilot Entity |
 | 12 | Repair System | Gameplay | MVP | Not Started | — | Damage System, Financial Ledger |
@@ -166,8 +166,8 @@ Ninguna detectada.
 | Total sistemas identificados | 25 |
 | Docs de diseño iniciados | 0 |
 | Docs de diseño en revisión | 0 |
-| Docs de diseño aprobados | 8 |
-| Sistemas MVP diseñados | 8 / 18 |
+| Docs de diseño aprobados | 9 |
+| Sistemas MVP diseñados | 9 / 18 |
 | Sistemas VS diseñados | 0 / 4 |
 
 ---
