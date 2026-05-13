@@ -21,6 +21,21 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+/* Code blocks — monospace con soporte Unicode para ASCII art */
+pre, pre code, .prism-code, code {
+  font-family: 'Consolas', 'Menlo', 'DejaVu Sans Mono', 'Courier New', monospace !important;
+}
+
+pre {
+  white-space: pre !important;
+  overflow-x: auto;
+}
+
+/* Inline code */
+:not(pre) > code {
+  white-space: nowrap;
+}
+
 .heroBanner {
   padding: 6rem 0;
   text-align: center;
