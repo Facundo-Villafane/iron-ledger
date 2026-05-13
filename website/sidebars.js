@@ -28,6 +28,7 @@ const sidebars = {
         'gdd/risk-calculation',
         'gdd/financial-ledger',
         'gdd/mission-generation',
+        'gdd/game-state-manager',
       ],
     },
     // Agregar nuevos GDDs acá a medida que se vayan creando
