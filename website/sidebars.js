@@ -37,6 +37,7 @@ const sidebars = {
         'gdd/win-lose-detection',
         'gdd/main-hangar-ui',
         'gdd/mission-card-ui',
+        'gdd/assignment-ui',
       ],
     },
     // Agregar nuevos GDDs acá a medida que se vayan creando
