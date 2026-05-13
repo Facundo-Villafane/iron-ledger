@@ -27,6 +27,7 @@ const sidebars = {
         'gdd/mecha-entity',
         'gdd/risk-calculation',
         'gdd/financial-ledger',
+        'gdd/mission-generation',
       ],
     },
     // Agregar nuevos GDDs acá a medida que se vayan creando

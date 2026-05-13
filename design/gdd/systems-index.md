@@ -25,7 +25,7 @@ La mayoría de los sistemas son relativamente pequeños — el juego es intencio
 | 4 | Mecha Entity System | Core | MVP | Approved | design/gdd/mecha-entity.md | Game Configuration |
 | 5 | Risk Calculation System | Gameplay | MVP | Approved | design/gdd/risk-calculation.md | Pilot Entity, Mecha Entity, Mission Data |
 | 6 | Financial Ledger System | Economy | MVP | Approved | design/gdd/financial-ledger.md | Game Configuration |
-| 7 | Mission Generation System | Gameplay | MVP | Not Started | — | Mission Data, Game Configuration |
+| 7 | Mission Generation System | Gameplay | MVP | Approved | design/gdd/mission-generation.md | Mission Data, Game Configuration |
 | 8 | Game State Manager | Core | MVP | Not Started | — | Game Configuration |
 | 9 | Assignment System | Gameplay | MVP | Not Started | — | Pilot Entity, Mecha Entity, Mission Generation |
 | 10 | Mission Resolution System | Gameplay | MVP | Not Started | — | Assignment, Risk Calculation, Mission Data |
@@ -163,8 +163,8 @@ Ninguna detectada.
 | Total sistemas identificados | 22 |
 | Docs de diseño iniciados | 0 |
 | Docs de diseño en revisión | 0 |
-| Docs de diseño aprobados | 6 |
-| Sistemas MVP diseñados | 6 / 18 |
+| Docs de diseño aprobados | 7 |
+| Sistemas MVP diseñados | 7 / 18 |
 | Sistemas VS diseñados | 0 / 4 |
 
 ---
