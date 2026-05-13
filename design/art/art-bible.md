@@ -88,6 +88,10 @@ Las líneas de energía, visores activos, y paneles de estado usan colores de la
 
 ### La Paleta Maestra (42 colores)
 
+**Descarga de la paleta .gpl** [LOSPEC500](https://lospec.com/palette-list/lospec500.gpl)
+
+![lospec500](https://lospec.com/palette-list/lospec500-32x.png)
+
 Formato `#RRGGBB` (convertido desde ARGB; alpha siempre FF — sin transparencias en la paleta base):
 
 | Familia | Colores | Rol semántico |
