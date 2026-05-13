@@ -33,7 +33,7 @@ La mayoría de los sistemas son relativamente pequeños — el juego es intencio
 | 12 | Repair System | Gameplay | MVP | Approved | design/gdd/repair-system.md | Damage System, Financial Ledger |
 | 13 | Weekly Cycle System | Gameplay | MVP | Approved | design/gdd/weekly-cycle.md | Mission Generation, Assignment, Mission Resolution, Damage, Financial Ledger |
 | 14 | Win/Lose Detection | Gameplay | MVP | Approved | design/gdd/win-lose-detection.md | Financial Ledger, Weekly Cycle |
-| 15 | Main Hangar Screen UI | UI | MVP | Not Started | — | Pilot Entity, Mecha Entity, Mission Generation |
+| 15 | Main Hangar Screen UI | UI | MVP | Approved | design/gdd/main-hangar-ui.md | Pilot Entity, Mecha Entity, Mission Generation |
 | 16 | Mission Card UI | UI | MVP | Not Started | — | Mission Data, Risk Calculation |
 | 17 | Assignment UI | UI | MVP | Not Started | — | Assignment System, Pilot Entity, Mecha Entity |
 | 18 | Result Report UI | UI | MVP | Not Started | — | Mission Resolution, Damage System |
@@ -166,8 +166,8 @@ Ninguna detectada.
 | Total sistemas identificados | 25 |
 | Docs de diseño iniciados | 0 |
 | Docs de diseño en revisión | 0 |
-| Docs de diseño aprobados | 14 |
-| Sistemas MVP diseñados | 14 / 18 |
+| Docs de diseño aprobados | 15 |
+| Sistemas MVP diseñados | 15 / 18 |
 | Sistemas VS diseñados | 0 / 4 |
 
 ---

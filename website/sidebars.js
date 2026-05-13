@@ -35,6 +35,7 @@ const sidebars = {
         'gdd/repair-system',
         'gdd/weekly-cycle',
         'gdd/win-lose-detection',
+        'gdd/main-hangar-ui',
       ],
     },
     // Agregar nuevos GDDs acá a medida que se vayan creando
