@@ -32,6 +32,7 @@ const sidebars = {
         'gdd/assignment-system',
         'gdd/mission-resolution',
         'gdd/damage-system',
+        'gdd/repair-system',
       ],
     },
     // Agregar nuevos GDDs acá a medida que se vayan creando
