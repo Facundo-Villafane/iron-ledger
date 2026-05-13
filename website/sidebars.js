@@ -30,6 +30,7 @@ const sidebars = {
         'gdd/mission-generation',
         'gdd/game-state-manager',
         'gdd/assignment-system',
+        'gdd/mission-resolution',
       ],
     },
     // Agregar nuevos GDDs acá a medida que se vayan creando
