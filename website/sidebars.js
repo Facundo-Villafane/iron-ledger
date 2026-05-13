@@ -38,6 +38,7 @@ const sidebars = {
         'gdd/main-hangar-ui',
         'gdd/mission-card-ui',
         'gdd/assignment-ui',
+        'gdd/result-report-ui',
       ],
     },
     // Agregar nuevos GDDs acá a medida que se vayan creando
