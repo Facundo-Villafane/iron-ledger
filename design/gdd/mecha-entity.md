@@ -85,7 +85,10 @@ extends Resource
 | `AVAILABLE` | Repair System / inicio de juego | Creado / reparación completada | Asignado a misión |
 | `ASSIGNED` | Assignment System | Jugador confirma asignación | Semana avanza |
 | `IN_PROGRESS` | Weekly Cycle System | Inicio de semana con misión activa | Mission Resolution resuelve |
-| `UNDER_REPAIR` | Damage System | Daño recibido en resolución | `repair_weeks_remaining` llega a 0 |
+| `BROKEN` | Damage System | HEAVY_DAMAGE recibido — fuera de servicio, sin reparación iniciada | Jugador paga la reparación |
+| `UNDER_REPAIR` | Repair System | Jugador inicia reparación (paga el costo) | `repair_weeks_remaining` llega a 0 |
+
+*`BROKEN` y `UNDER_REPAIR` son estados distintos: un mecha BROKEN está roto esperando que el jugador decida repararlo. Un mecha UNDER_REPAIR está siendo reparado activamente con countdown en curso. El jugador puede optar por no reparar y jugar con menos recursos.*
 
 ---
 
@@ -94,10 +97,10 @@ extends Resource
 | Estado | Descripción | Efecto en juego |
 |---|---|---|
 | `INTACT` | Sin daño estructural | Sin penalización |
-| `LIGHT_DAMAGE` | Daño menor — funcional pero desgastado | `-0.05` a probabilidad de éxito en próxima misión |
-| `HEAVY_DAMAGE` | Daño grave — fuera de servicio | `status = UNDER_REPAIR` automáticamente; no disponible hasta reparar |
+| `LIGHT_DAMAGE` | Daño menor — funcional pero desgastado | `-0.05` a probabilidad de éxito. Reparable manualmente por el jugador |
+| `HEAVY_DAMAGE` | Daño grave — fuera de servicio | `status = BROKEN`. No asignable hasta que el jugador pague la reparación |
 
-*Un mecha con `LIGHT_DAMAGE` puede ser asignado — el jugador decide si lo manda igual. Un mecha con `HEAVY_DAMAGE` no puede ser asignado hasta que el Repair System lo resuelva.*
+*Un mecha con `LIGHT_DAMAGE` puede ser asignado — el jugador elige si repararlo (paga 400 cr, 1 semana fuera) o mandarlo igual con el riesgo. Un mecha con `HEAVY_DAMAGE` está `BROKEN` hasta que el jugador decida y pueda pagar la reparación.*
 
 ---
 

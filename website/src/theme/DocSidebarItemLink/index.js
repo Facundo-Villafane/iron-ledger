@@ -15,8 +15,17 @@ const BADGE_STYLE = {
   flexShrink: 0,
 };
 
+function extractDocId(item) {
+  // Try docId first, then derive from href
+  if (item?.docId) return item.docId;
+  const href = item?.href || '';
+  // href is like /iron-ledger/docs/gdd/game-concept
+  const match = href.match(/\/docs\/(.+)$/);
+  return match ? match[1] : null;
+}
+
 export default function DocSidebarItemLink(props) {
-  const docId = props.item?.docId;
+  const docId = extractDocId(props.item);
   const meta = docId ? lastModified[docId] : null;
 
   if (!meta?.isNew) {
