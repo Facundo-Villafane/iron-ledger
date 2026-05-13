@@ -98,6 +98,8 @@ var costo = GameConfig.HANGAR_WEEKLY_RENT
 |---|---|---|
 | `VICTORY_WEEKS` | `12` | Semanas que hay que sobrevivir para ganar |
 | `VICTORY_MIN_CREDITS` | `5000` | Créditos mínimos al llegar a semana 12 para victoria |
+| `DEBT_CEILING` | `-3000` | Piso de deuda — si el balance cae por debajo, quiebra inmediata |
+| `MAX_DEBT_WEEKS` | `3` | Semanas consecutivas en rojo permitidas antes de quiebra |
 
 ## Formulas
 

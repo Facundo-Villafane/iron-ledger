@@ -34,6 +34,7 @@ const sidebars = {
         'gdd/damage-system',
         'gdd/repair-system',
         'gdd/weekly-cycle',
+        'gdd/win-lose-detection',
       ],
     },
     // Agregar nuevos GDDs acá a medida que se vayan creando
