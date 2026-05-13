@@ -56,7 +56,7 @@ La tensión visual es parte del diseño: ver una bahía vacía (mecha BROKEN sin
 
 └───────────────────┴───────────────────[AVANZAR TURNO]────────┘
 ```
-**Mockups Generados por IA**
+**Mockups Generados por IA porque esta mierda de documentador hace lo que se le canta y no respeta los formatos mas simple hdp**
 *Opcion A*
 ![Mockup Generado por IA](https://chatgpt.com/backend-api/estuary/public_content/enc/eyJpZCI6Im1fNmEwM2Y3M2Q5OGVjODE5MTljY2E0MjIxYzQyZGM5YTg6ZmlsZV8wMDAwMDAwMDA1ZjQ3MjBlYjNkYjYxZWUzOTY1OTI3NyIsInRzIjoiMjA1ODYiLCJwIjoicHlpIiwiY2lkIjoiMSIsInNpZyI6ImQxZmIzZjZlNTc1OGIwNWQzYTJlYjE3MDRlYmNiZWQ4OTc3MWNmYTQzOGY1MTg5ODI1OTIzYjAzN2UyZjU0MTQiLCJ2IjoiMCIsImdpem1vX2lkIjpudWxsLCJjcyI6bnVsbCwiY2RuIjpudWxsLCJmbiI6bnVsbCwiY2QiOm51bGwsImNwIjpudWxsLCJtYSI6bnVsbH0=)
 
